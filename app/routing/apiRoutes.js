@@ -24,6 +24,12 @@ module.exports = function(app) {
         var bestMatchPhoto= "";
         var bestMatchDifference = 1000;
 
+        // var bestMatch = {
+        //     name: "",
+        //     photo:"",
+        //     difference = 1000
+        // };
+
         // Will be used to calculate the difference between users' scores
         var totalDifference = 0;
 
@@ -45,8 +51,12 @@ module.exports = function(app) {
 
                     // Resetting the bestMatch variable
                     bestMatchName = friends[i].name;
-                    bestMatcPhoto = friends[i].photo;
+                    bestMatchPhoto = friends[i].photo;
                     bestMatchDifference = totalDifference;
+
+                    // bestMatch.name = friends[i].name;
+                    // bestMatch.photo = friends[i].photo;
+                    // bestMatch.difference = totalDifference;
                 }
             }
         }
