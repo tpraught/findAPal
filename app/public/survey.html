@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find A Pal</title>
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+<!-- Import jQuery before materialize.js -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+      $('select').material_select();
+      $('.modal').modal();
+    });
+  </script>
+
+<style>
+    .input-field.inline {
+        width:300px;
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="row">
+        <div class="col s3"></div>
+        <form class="col s6">
+            <h2 class="teal-text text-darken-2 center"><b>Questionaire</b></h2>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="name" class="userInfo" type="text" required>
+                    <label for="name">Name (Required)</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="photo" class="userInfo" type="text" required>
+                    <label for="photo">Link to photo (Required)</label>
+                </div>
+            </div>
+            <div class="row">
+                <p>Please answer as honestly as possible using the range below.</p>
+                <p><b>1</b> - Strongly disagree | <b>2</b> - Disagree | <b>3</b> - Neutral | <b>4</b> - Agree | <b>5</b> - Strongly agree</p>
+                <br />
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <div class="input-field col s12">
+                      <select class="question" id="q1">
+                        <option value="" disabled selected>I enjoy meeting new people</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                      </select>
+                      <label>Question 1</label>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="input-field col s12">
+                      <select class="question" id="q2">
+                        <option value="" disabled selected>I like helping people</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                      </select>
+                      <label>Question 2</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <div class="input-field col s12">
+                      <select class="question" id="q3">
+                        <option value="" disabled selected>I am ok with making mistakes</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                      </select>
+                      <label>Question 3</label>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="input-field col s12">
+                      <select class="question" id="q4">
+                        <option value="" disabled selected>I am easily disappointed</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                      </select>
+                      <label>Question 4</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <div class="input-field col s12">
+                      <select class="question" id="q5">
+                        <option value="" disabled selected>I am modest about what I have achieved</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                      </select>
+                      <label>Question 5</label>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="input-field col s12">
+                      <select class="question" id="q6">
+                        <option value="" disabled selected>I like to try new things</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                      </select>
+                      <label>Question 6</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <div class="input-field col s12">
+                      <select class="question" id="q7">
+                        <option value="" disabled selected>I usually feel relaxed</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                      </select>
+                      <label>Question 7</label>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="input-field col s12">
+                      <select class="question" id="q8">
+                        <option value="" disabled selected>I find making decisions easy</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                      </select>
+                      <label>Question 8</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <div class="input-field col s12">
+                      <select class="question" id="q9">
+                        <option value="" disabled selected>I am happy most of the time</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                      </select>
+                      <label>Question 9</label>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="input-field col s12">
+                      <select class="question" id="q10">
+                        <option value="" disabled selected>I am pretty low-key</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                      </select>
+                      <label>Question 10</label>
+                    </div>
+                </div>
+                <button class="waves-effect waves-light btn" type="submit" name="action" id="submit">Submit</button>
+            </div>
+        </form>
+        <div class="col s3"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Your Pal Match</h4>
+          <div class="divider"></div>
+          <h5 id="userMatch"></h5>
+          <img id="userMatchImage" class="materialboxed" width="650" src="">
+        </div>
+        <div class="modal-footer">
+          <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">start over</a>
+        </div>
+    </div>
+
+    <footer class="page-footer col s-12 teal darken-2" style="margin-top:50px;">
+      <div class="container">
+        <div class="row">
+          <div class="cols12 center">
+            <p><a class="grey-text text-lighten-4" href="/api/friends">API Friends List</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="grey-text text-lighten-4" href="https://github.com/tpraught/findAPal" target="_blank">GitHub Repo</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright teal darken-4">
+        <div class="container center">
+        © 2018 Copyright Tonye Praught&nbsp;&nbsp;|&nbsp;&nbsp;UMN Full Stack Coding Boot Camp 
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script for capturing and POST form data -->
+    <script type="text/javascript">
+      $("#submit").on("click", function(event) {
+        event.preventDefault();
+
+        var userScoresArray = [];
+
+        $(".question option:selected").each(function(){
+          userScoresArray.push(parseInt($(this).val()));
+        });
+
+        var userProfile = {
+          name: $("#name").val().trim(),
+          photo: $("#photo").val(),
+          scores: userScoresArray
+        };
+
+        $.post("/api/friends", userProfile).done(function(data) {
+          console.log("Data: " + data);
+          $("#userMatch").text(data.bestMatchName);
+          $("#userMatchImage").attr("src", data.bestMatchPhoto);
+          $('#modal1').modal('open');
+        });
+      });
+
+    </script>
+    
+</body>
+</html>
