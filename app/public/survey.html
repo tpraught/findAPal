@@ -238,12 +238,13 @@
           scores: userScoresArray
         };
 
-        $.post("/api/friends", userProfile).done(function(data) {
+        $.post("/api/friends", userProfile).then(function(data) {
           console.log("Data: " + data);
           $("#userMatch").text(data.bestMatchName);
           $("#userMatchImage").attr("src", data.bestMatchPhoto);
-          $('#modal1').modal('open');
         });
+
+        $('#modal1').modal('open');
       });
 
     </script>

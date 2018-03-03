@@ -65,8 +65,11 @@ module.exports = function(app) {
        friends.push(userInput);
        
        // Returning the user's best match
-       res.json(bestMatchName);
-       res.json(bestMatchPhoto);
-       res.json(bestMatchDifference);
+       res.json({status: 'OK', bestMatchName: bestMatchName, bestMatchPhoto: bestMatchPhoto});
+    //    res.json(bestMatchName);
+    //    res.json(bestMatchPhoto);
+    //    res.json(bestMatchDifference);
+
+       // res.json(bestMatch);
     });
 }
